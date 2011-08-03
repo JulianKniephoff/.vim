@@ -1,3 +1,5 @@
+source ~/.vim/bundle/pathogen/autoload/pathogen.vim
+
 " Setup pathogen
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
