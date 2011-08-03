@@ -1,3 +1,7 @@
+" Make using marks a bit easier
+nnoremap ' `
+nnoremap ` '
+
 syntax on
 
 set autoindent
@@ -17,14 +21,15 @@ set scrolloff=3
 set list
 set listchars=tab:▸\ 
 " TODO The guibg option actually belongs into gvimrc
-:highlight ExtraWhitespace ctermbg=red guibg=red
-:match ExtraWhitespace /\s\+$/
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
 
 " Remember cursor position between editing sessions
 autocmd BufReadPost * call RestoreCursorPosition()
 function! RestoreCursorPosition()
 	if line("'\"") > 0 && line("'\"") <= line("$")
-		normal! g`"
+		normal! `"
 		normal! zz
+		" TODO Maybe rather also restore viewport position?
 	endif
 endfunction
