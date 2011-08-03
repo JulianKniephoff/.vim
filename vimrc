@@ -1,3 +1,7 @@
+" Setup pathogen
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 " Make using marks a bit easier
 nnoremap ' `
 nnoremap ` '
