@@ -8,7 +8,12 @@ call pathogen#helptags()
 nnoremap ' `
 nnoremap ` '
 
+" Color setup
 syntax on
+set background=dark
+" TODO Maybe consider using the solarized colors in your terminal emulators
+let g:solarized_termcolors=256
+colorscheme solarized
 
 set autoindent
 
