@@ -37,3 +37,14 @@ function! RestoreCursorPosition()
 		" TODO Maybe rather also restore viewport position?
 	endif
 endfunction
+
+" Make AutoClose a bit more useful
+inoremap "" "
+inoremap "" "
+inoremap '' '
+inoremap (( (
+inoremap )) )
+inoremap [[ [
+inoremap ]] ]
+inoremap {{ {
+inoremap }} }
