@@ -13,6 +13,8 @@ syntax on
 set background=dark
 " TODO Maybe consider using the solarized colors in your terminal emulators
 let g:solarized_termcolors=256
+" Fix the above in Ubuntu
+set t_Co=256
 colorscheme solarized
 
 set autoindent
