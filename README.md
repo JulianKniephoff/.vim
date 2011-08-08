@@ -22,6 +22,17 @@ or just do
 
 	ln -s .vim/vimrc ~/.vimrc
 
+You now have to build the Command-T plugin native extension: First
+make sure you are building it with the ruby version that your vim
+was linked against. You can see this version e.g. via
+
+	vim "+ruby puts RUBY_VERSION"
+
+After that, simply run
+
+	cd bundle/command-t
+	rake make
+
 Windows
 -------
 

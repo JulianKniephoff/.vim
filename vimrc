@@ -10,6 +10,9 @@ filetype plugin indent on
 nnoremap ' `
 nnoremap ` '
 
+" Map the leader to an actual usable position
+let mapleader=","
+
 " Color setup
 syntax on
 set background=dark
