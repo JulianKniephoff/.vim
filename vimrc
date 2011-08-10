@@ -69,3 +69,5 @@ inoremap [[ [
 inoremap ]] ]
 inoremap {{ {
 inoremap }} }
+
+source <sfile>:h/keymap.vim
