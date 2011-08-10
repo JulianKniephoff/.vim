@@ -22,13 +22,20 @@ let g:solarized_termcolors=256
 set t_Co=256
 colorscheme solarized
 
-set autoindent
-
 " Searching options
 set incsearch
 set hlsearch
 set ignorecase
 set smartcase
+
+" Formatting options
+set autoindent
+
+set colorcolumn=80
+set textwidth=79
+" For those older vim versions also color long lines
+call matchadd('ErrorMsg', '\%>79v.\+', -1)
+autocmd WinEnter * call matchadd('ErrorMsg', '\%>79v.\+', -1)
 
 set number
 
@@ -37,10 +44,10 @@ set scrolloff=3
 " Make spotting of unwanted whitespace easy
 " TODO Use *_space_errors?
 set list
-set listchars=tab:▸\ 
-" TODO The guibg option actually belongs into gvimrc
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
+" set listchars=tab:▸\ 
+set listchars=tab:>\ 
+call matchadd('ErrorMsg', '\s\+$', -1)
+autocmd WinEnter * call matchadd('ErrorMsg', '\s\+$', -1)
 
 " Remember cursor position between editing sessions
 autocmd BufReadPost * call RestoreCursorPosition()
