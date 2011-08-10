@@ -1,1 +1,1 @@
-nnoremap ,/ :noh<CR>
+nnoremap <Leader>/ :noh<CR>
