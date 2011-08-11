@@ -70,4 +70,4 @@ inoremap ]] ]
 inoremap {{ {
 inoremap }} }
 
-source <sfile>:h/keymap.vim
+source <sfile>:h/.vim/keymap.vim
