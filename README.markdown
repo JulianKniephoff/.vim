@@ -13,14 +13,13 @@ Clone this directory into `~/.vim` then do a quick
 	git submodule init
 	git submodule update
 
-and finally make sure you're actually using my `.vimrc` by either including it in an appropriate spot of
-your own configuration via
+and finally make sure you're actually using my `.vimrc` by including it in an
+appropriate spot of your own configuration via
 
 	source ~/.vim/vimrc
 
-or just do
-
-	ln -s .vim/vimrc ~/.vimrc
+*Note:* Do not symlink `~/.vimrc` to `~/.vim/vimrc` as some paths will be off
+then.
 
 You now have to build the Command-T plugin native extension: First
 make sure you are building it with the ruby version that your vim
