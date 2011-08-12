@@ -46,8 +46,9 @@ set scrolloff=3
 set list
 " set listchars=tab:▸\ 
 set listchars=tab:>\ 
-call matchadd('ErrorMsg', '\s\+$', -1)
-autocmd WinEnter * call matchadd('ErrorMsg', '\s\+$', -1)
+call matchadd('ErrorMsg', '\s\+\%#\@<!$', -1)
+autocmd WinEnter * call matchadd('ErrorMsg', '\s\+\%#\@<!$', -1)
+autocmd InsertLeave * redraw!
 
 " Remember cursor position between editing sessions
 autocmd BufReadPost * call RestoreCursorPosition()
@@ -71,3 +72,5 @@ inoremap {{ {
 inoremap }} }
 
 source <sfile>:h/keymap.vim
+
+" TODO Maybe use dedicated highlight groups for long lines and extra space
