@@ -30,6 +30,9 @@ set smartcase
 
 " Formatting options
 set autoindent
+" Some sensible indentation options
+set tabstop=4
+set shiftwidth=4
 
 set colorcolumn=80
 set textwidth=79
