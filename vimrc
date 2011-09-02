@@ -15,6 +15,8 @@ let mapleader=","
 
 " Color setup
 syntax on
+" Fix filetype recognition for actionscript
+au BufRead,BufNewFile *.as set filetype=actionscript
 set background=dark
 " TODO Maybe consider using the solarized colors in your terminal emulators
 let g:solarized_termcolors=256
