@@ -39,8 +39,10 @@ set shiftwidth=4
 set colorcolumn=80
 set textwidth=79
 " For those older vim versions also color long lines
-call matchadd('ErrorMsg', '\%>79v.\+', -1)
-autocmd WinEnter * call matchadd('ErrorMsg', '\%>79v.\+', -1)
+" TODO Only activate this in versions of vim not supporting colorcolumn
+" TODO Or maybe make a shortcut to show/hide this
+" call matchadd('ErrorMsg', '\%>79v.\+', -1)
+" autocmd WinEnter * call matchadd('ErrorMsg', '\%>79v.\+', -1)
 
 set number
 
