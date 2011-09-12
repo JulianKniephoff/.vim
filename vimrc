@@ -1,5 +1,8 @@
 source ~/.vim/bundle/pathogen/autoload/pathogen.vim
 
+" Allow for hidden files
+set hidden
+
 " Setup pathogen
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
