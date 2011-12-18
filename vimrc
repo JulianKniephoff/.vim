@@ -75,6 +75,8 @@ function! RestoreCursorPosition()
 	endif
 endfunction
 
+let g:Tex_ViewRule_pdf='Preview'
+
 " Make AutoClose a bit more useful
 inoremap "" "
 inoremap "" "
