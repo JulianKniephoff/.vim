@@ -7,7 +7,10 @@ set hidden
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-filetype plugin indent on
+filetype plugin on
+filetype indent on
+" Fix vim-latex
+let g:tex_flavor='latex'
 
 " Make using marks a bit easier
 nnoremap ' `
