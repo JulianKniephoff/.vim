@@ -16,3 +16,6 @@
 [submodule "bundle/actionscript"]
 	path = bundle/actionscript
 	url = https://github.com/vim-scripts/actionscript.vim--Cuss.git
+[submodule "bundle/zenburn"]
+	path = bundle/zenburn
+	url = https://github.com/cespare/zenburn.git
