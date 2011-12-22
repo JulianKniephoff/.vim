@@ -13,4 +13,4 @@ inoremap ~~~ <Esc>mzbl~`za
 inoremap jk <Esc>
 
 " Quickly save
-noremap <C-S> :w
+noremap <C-S> :w<CR>
