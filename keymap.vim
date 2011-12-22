@@ -5,4 +5,7 @@ nnoremap <Leader>/ :noh<CR>
 noremap E ea
 
 " Correct capitalization in insert mode
-imap ~~ <Esc>mzb~'za
+inoremap ~~ <Esc>mzb~'za
+
+" Quickly exit insert mode
+inoremap jk <Esc>
