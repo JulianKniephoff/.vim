@@ -4,4 +4,5 @@ nnoremap <Leader>/ :noh<CR>
 " Some often used combinations
 noremap E ea
 
-inoremap ~~ <Esc>b~ea
+" Correct capitalization in insert mode
+imap ~~ <Esc>mzb~'za
