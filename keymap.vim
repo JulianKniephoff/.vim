@@ -11,3 +11,6 @@ inoremap ~~~ <Esc>mzbl~`za
 
 " Quickly exit insert mode
 inoremap jk <Esc>
+
+" Quickly save
+noremap <C-S> :w
