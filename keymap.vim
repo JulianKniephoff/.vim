@@ -1,5 +1,6 @@
 " I hate leftover highlighting
-nnoremap <Leader>/ :noh<CR>
+nnoremap // :noh<CR>
+noremap <Leader>/ :FufBuffer
 
 " Some often used combinations
 noremap E ea
