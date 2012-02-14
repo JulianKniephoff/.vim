@@ -21,8 +21,9 @@ let mapleader=","
 
 " Color setup
 syntax on
-" Fix filetype recognition for actionscript
+" Fix filetype recognition
 au BufRead,BufNewFile *.as set filetype=actionscript
+au BufRead,BufNewFile *.md set filetype=markdown
 set background=dark
 " TODO Maybe consider using the solarized colors in your terminal emulators
 let g:solarized_termcolors=256
@@ -75,7 +76,7 @@ function! RestoreCursorPosition()
 	endif
 endfunction
 
-let g:Tex_ViewRule_pdf='Preview'
+let g:Tex_ViewRule_pdf='Skim'
 
 " Make AutoClose a bit more useful
 inoremap "" "
