@@ -33,3 +33,6 @@
 	path = bundle/l9
 	url = https://github.com/vim-scripts/L9.git
 	ignore = dirty
+[submodule "bundle/gundo"]
+	path = bundle/gundo
+	url = http://github.com/sjl/gundo.vim.git
