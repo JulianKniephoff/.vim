@@ -22,6 +22,7 @@ let mapleader=","
 " Color setup
 syntax on
 " Fix filetype recognition
+au BufRead,BufNewFile *.jstalk set filetype=javascript
 au BufRead,BufNewFile *.as set filetype=actionscript
 au BufRead,BufNewFile *.md set filetype=markdown
 set background=dark
