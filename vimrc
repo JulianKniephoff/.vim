@@ -29,9 +29,7 @@ au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile *.m set filetype=objc
 au BufRead,BufNewFile *.mm set filetype=objcpp
 set background=dark
-" TODO Maybe consider using the solarized colors in your terminal emulators
-let g:solarized_termcolors=256
-" Fix the above in Ubuntu
+" let g:solarized_termcolors=256
 set t_Co=256
 colorscheme solarized
 " TODO Install via pathogen
