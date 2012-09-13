@@ -33,9 +33,9 @@ set background=dark
 let g:solarized_termcolors=256
 " Fix the above in Ubuntu
 set t_Co=256
-" colorscheme solarized
+colorscheme solarized
 " TODO Install via pathogen
-colorscheme zenburn
+" colorscheme zenburn
 
 " Searching options
 set incsearch
