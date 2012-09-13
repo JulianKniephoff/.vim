@@ -89,6 +89,9 @@ inoremap ]] ]
 inoremap {{ {
 inoremap }} }
 
+" Make CommandT more usable
+let g:CommandTMatchWindowAtTop=1
+
 source <sfile>:h/keymap.vim
 " TODO This only works with sourcing vimrc in .vimrc, not with symlinking
 " source <sfile>:h/.vim/keymap.vim
