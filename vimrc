@@ -25,6 +25,8 @@ syntax on
 au BufRead,BufNewFile *.jstalk set filetype=javascript
 au BufRead,BufNewFile *.as set filetype=actionscript
 au BufRead,BufNewFile *.md set filetype=markdown
+au BufRead,BufNewFile *.m set filetype=objc
+au BufRead,BufNewFile *.mm set filetype=objcpp
 set background=dark
 " TODO Maybe consider using the solarized colors in your terminal emulators
 let g:solarized_termcolors=256
