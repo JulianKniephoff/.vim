@@ -11,6 +11,7 @@ filetype plugin on
 filetype indent on
 " Fix vim-latex
 let g:tex_flavor='latex'
+let g:Tex_ViewRule_pdf='Skim'
 
 " Make using marks a bit easier
 nnoremap ' `
@@ -78,8 +79,6 @@ function! RestoreCursorPosition()
 		" TODO Maybe rather also restore viewport position?
 	endif
 endfunction
-
-let g:Tex_ViewRule_pdf='Skim'
 
 " Make AutoClose a bit more useful
 inoremap "" "
