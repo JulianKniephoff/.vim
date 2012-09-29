@@ -64,6 +64,11 @@ inoremap <leader>} }
 " Other mappings
 source <sfile>:h/keymap.vim
 
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
 " Make top match of CommandT not move
 let g:CommandTMatchWindowAtTop=1
 
