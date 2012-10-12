@@ -48,6 +48,7 @@ au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile *.m set filetype=objc
 au BufRead,BufNewFile *.mm set filetype=objcpp
 au BufRead,BufNewFile *.thor set filetype=ruby
+au BufRead,BufNewFile Thorfile set filetype=ruby
 
 set background=dark
 colorscheme solarized
