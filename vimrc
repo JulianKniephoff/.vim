@@ -21,7 +21,9 @@ call matchadd('ErrorMsg', '\s\+\%#\@<!$', -1)
 autocmd WinEnter * call matchadd('ErrorMsg', '\s\+\%#\@<!$', -1)
 autocmd InsertLeave * redraw!
 
-set colorcolumn=80
+if has("colorcolumn")
+	set colorcolumn=80
+endif
 set textwidth=79
 
 " Number lines
