@@ -2,6 +2,10 @@ source ~/.vim/bundle/pathogen/autoload/pathogen.vim
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+" Allow local configuration files
+set exrc
+set secure
+
 " Allow for hidden files
 set hidden
 
