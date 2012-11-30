@@ -25,7 +25,7 @@ call matchadd('ErrorMsg', '\s\+\%#\@<!$', -1)
 autocmd WinEnter * call matchadd('ErrorMsg', '\s\+\%#\@<!$', -1)
 autocmd InsertLeave * redraw!
 
-if has("colorcolumn")
+if exists('+colorcolumn')
 	set colorcolumn=80
 endif
 set textwidth=79
