@@ -25,10 +25,24 @@ call matchadd('ErrorMsg', '\s\+\%#\@<!$', -1)
 autocmd WinEnter * call matchadd('ErrorMsg', '\s\+\%#\@<!$', -1)
 autocmd InsertLeave * redraw!
 
-if exists('+colorcolumn')
-	set colorcolumn=80
-endif
 set textwidth=79
+if exists('+colorcolumn')
+	set colorcolumn=+1
+else
+	function! ToggleLongLines()
+		if exists('w:LongLineMatch')
+			call matchdelete(w:LongLineMatch)
+			unlet w:LongLineMatch
+		elseif &textwidth > 0
+			let w:LongLineMatch = matchadd('ErrorMsg', '\%>'.&tw.'v.\+', -1)
+		else
+			let w:LongLineMatch = matchadd('ErrorMsg', '\%>80v.\+', -1)
+		endif
+	endfunction
+
+	call ToggleLongLines()
+	nmap <Leader>8 :call ToggleLongLines()<CR>
+endif
 
 " Number lines
 set number
