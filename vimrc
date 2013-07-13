@@ -2,6 +2,9 @@ source ~/.vim/bundle/pathogen/autoload/pathogen.vim
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+" Encoding
+set encoding=utf-8
+
 " Allow local configuration files
 set exrc
 set secure
